@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Desgin One Health Lnc.</title>
     <link rel="stylesheet" href="css/main.css">
     <!--제이쿼리 라이브러리-->
@@ -16,18 +17,29 @@
     <!--헤더영역------------------------------------------------>
     <header>
         <div class="inbox header_wrap">
-            <a href="#" class="logo"></a>
-            <nav>
-                <ul class="gnb">
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">연구개발</a></li>
-                    <li><a href="#">사업분야</a></li>
-                    <li><a href="#">협력문의</a></li>
-                    <li><a href="#">소개자료</a></li>
-                    <li><a href="#">공지사항</a></li>
-                </ul>
-            </nav>
-            <button class="topbtn" target="_blank" onclick="location.href=">SHOP</button>
+            <div class="header_PC">
+                <a href="#" class="logo"></a>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">연구개발</a></li>
+                        <li><a href="#">사업분야</a></li>
+                        <li><a href="#">협력문의</a></li>
+                        <li><a href="#">소개자료</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </nav>
+                <button class="topbtn" target="_blank" onclick="location.href=">SHOP</button>
+            </div>
+            <!--모바일 헤더-->
+            <div class="header_m">
+                <a href="#" class="mobile_logo"></a>
+                <div class="ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </header>
     <!--배너영역------------------------------------------------->
@@ -85,7 +97,7 @@
                 <li>
                     <img src="images/main_list2.png" alt="헬스케어 관련제품 개발 아이콘">
                     <b>헬스케어 관련제품 개발</b>
-                    <p>첨단기술 기반의 헬스케어 소재,<br>포뮬레이션 및 완제품 개발</p>
+                    <p>첨단기술 기반의 헬스케어 소재,포뮬레이션 및 완제품 개발</p>
                 </li>
                 <li>
                     <img src="images/main_list3.png" alt="감염병 예방기술 연구 아이콘">
@@ -159,7 +171,7 @@
 
             <!--뮤비보기 팝업창-->
             <div id="modal">
-                
+
                 <div id="vidSizer">
                     <div id="vidHolder">
                         <iframe name="mainVid" id="mainVid" src="" frameborder="0" allow="autoplay=1; encrypted-media" allowfullscreen></iframe>
@@ -236,6 +248,4 @@
 
 
 
-</body>
-
-</html>
+</body></html>

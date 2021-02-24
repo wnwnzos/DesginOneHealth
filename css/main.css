@@ -3,6 +3,7 @@
 /*파일머징(합치기)*/
 @import url(reset.css);
 @import url(core.css);
+@import url(media.css);
 
 
 
@@ -68,19 +69,28 @@ header {
 
 
 
-.header_wrap {
-    position: relative;
-    display: flex;
+
+
+.header_PC{
+     position: relative;
     height: 100px;
-    align-items: center;
-    justify-content: space-between;
+
 }
 
 .logo {
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     width: 270px;
     height: 58px;
     background: url(../images/logo.png)no-repeat;
     background-size: cover;
+}
+nav{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .gnb {
@@ -102,6 +112,8 @@ header {
 /*샵 버튼*/
 .topbtn {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
     width: 106px;
     height: 37px;
@@ -118,6 +130,57 @@ header {
     background-color: #2050a1;
     transition: all .3s ease-in;
 }
+
+/*모바일버전 헤더******************************/
+.header_m{
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+    height: 100px;
+/*    outline: 1px dashed red;*/
+
+}
+.mobile_logo{
+    float: left;
+    width: 140px;
+    height: 30px;
+    background: url(../images/logo.png)no-repeat;
+    background-size: cover;
+margin-left: 10px;
+}
+/*햄버거메뉴*/
+.ham {
+    width: 27px;
+    height: 21px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 9999;
+    margin-right: 10px;
+}
+
+.ham span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    border-radius: 20px;
+}
+
+.ham span:nth-child(1) {
+    top: 0;
+}
+
+.ham span:nth-child(2) {
+    top: 9px;
+}
+
+.ham span:nth-child(3) {
+    top: 18px;
+}
+
 
 
 /*메인배너********************/
@@ -263,16 +326,17 @@ header {
     width: 100%;
     height: 263px;
     display: flex;
-    justify-content: space-between;
 }
 
 .main_list_wrap li {
+   margin-right: 3%;
     background-color: #fff;
-    width: 368px;
-    height: 263px;
+    padding: 4%;
     border-radius: 30px;
     box-shadow: 0 1px 14px 3px rgb(0 0 0 / 17%);
-    padding: 50px 80px 43px 40px;
+}
+.main_list_wrap li:last-child{
+    margin-right: 0px;
 }
 
 .main_list_wrap li img {

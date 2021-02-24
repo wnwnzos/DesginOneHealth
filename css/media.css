@@ -1,0 +1,31 @@
+/*미디어쿼리 - main.css*/
+
+/*320이상 1279이하*/
+@media all and (min-width:320px) and (max-width: 1279px) {
+    .header_PC {
+        display: none;
+    }
+
+}
+/*360이상*/
+@media all and (min-width: 360px){
+    .header_m {
+    height: 50px;
+}
+    
+}
+/*1170이상*/
+@media all and (min-width: 1170px){
+    
+}
+
+
+
+/*1280이상*/
+@media all and (min-width: 1280px){
+
+    .header_m{
+        display: none;
+    }
+}
+
