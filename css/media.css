@@ -1,31 +1,163 @@
 /*미디어쿼리 - main.css*/
 
-/*320이상 1279이하*/
-@media all and (min-width:320px) and (max-width: 1279px) {
+/*1279이하*/
+@media all and (max-width: 1279px) {
+
     .header_PC {
         display: none;
     }
 
-}
-/*360이상*/
-@media all and (min-width: 360px){
-    .header_m {
-    height: 50px;
-}
+    .header_wrap {
+        height: 80px;
+    }
+
     
+    /*푸터영역************/
+
+
 }
-/*1170이상*/
-@media all and (min-width: 1170px){
-    
-}
 
-
-
-/*1280이상*/
-@media all and (min-width: 1280px){
-
-    .header_m{
-        display: none;
+/*1240이하*/
+@media all and (max-width: 1240px){
+    .brand_list_wrap li a{
+        font-size: 25px;
     }
 }
 
+
+/*1153이하*/
+@media all and (max-width: 1153px){
+    .main_list_wrap li:nth-child(2) b{
+        font-size: 18px;
+    }
+    .main_list_wrap li p {
+    font-size: 13px;
+}
+    .vid{
+        height: 272px;
+    }
+    .vidBox li {
+    width: 48%;
+        height: 360px;
+        padding: 2%;
+}
+    
+    /*푸터영역*************/
+    .brand_list_wrap li a{
+        font-size: 21px;
+    }
+    
+}
+
+
+/*1075이하*/
+@media all and (max-width: 1075px){
+
+    .keyword_PC{
+         display: none;
+    }
+    .keyword_M{
+        display: block;
+    }
+    
+    /*푸터영역**********/
+    .brand_list_wrap li a {
+    font-size: 18px;
+}
+    
+}
+
+
+/*900이하*/
+@media all and (max-width: 900px) {
+
+
+    .main_list_wrap {
+        flex-direction: column;
+    }
+
+    .main_list_wrap li {
+        margin-right: 0;
+        margin-bottom: 3%;
+        display: flex;
+        align-items: center;
+    }
+
+    .main_list_wrap li img {
+        padding-bottom: 0;
+    }
+
+    .boxtxt {
+        padding-left: 40px;
+    }
+
+    .develoWrap {
+        margin-bottom: 300px;
+    }
+
+
+    /*디자인원헬스 내용**************/
+    .main_info_wrap {
+        height: 400px;
+        padding: 0 10px;
+    }
+
+    .info_img {
+        top: -11%;
+        width: 97%;
+        height: 150px;
+
+    }
+
+    .ceobox {
+        width: 50%;
+        left: 0;
+        height: 400px;
+        padding: 19px 15px 0px 15px;
+    }
+
+    .ceobox h2 {
+        padding: 15px 0 3px 0;
+        font-size: 16px;
+    }
+
+    .ceobox h2 small {
+        font-size: 13px;
+    }
+
+    .ceobox p:nth-of-type(1) {
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+
+
+    .designtxtBox {
+        position: absolute;
+        top: 23%;
+        padding: 8% 5% 0 5%;
+    }
+
+    .designtxtBox h2 {
+        font-size: 17px;
+        padding-bottom: 8px;
+    }
+
+    .designtxtBox p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .combtn {
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+
+}
+
+/*1279이상*/
+@media all and (min-width: 1279px) {
+    .header_m {
+        display: none;
+    }
+}

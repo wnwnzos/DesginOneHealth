@@ -8,12 +8,32 @@ $(window).on('scroll', function () {
 
     if (scrollTop == 0) {
         $('header').removeClass('header_change');
+        $('.ham span').css({
+            background:"#fff"
+        });
     } else {
         $('header').addClass('header_change');
+       $('.ham span').css({
+            background:"#333"
+        });
     }
 });
 
+    
+// 메뉴 클릭시 메뉴창 나오기 //////////////////////
+    $(".ham").click(function(){
+        $(".menu_popup_wrap").animate({
+            right:0
+        },300);
+    });
 
+    // 메뉴창 닫기버튼 클릭시 메뉴창 닫기 ////////////
+    $(".menu_popup_cbtn_img").click(function(a){
+        a.preventDefault();
+        $(".menu_popup_wrap").animate({
+            right:"-35%"
+        },300);
+    });
 
 
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Desgin One Health Lnc.</title>
     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="css/media.css">
     <!--제이쿼리 라이브러리-->
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
@@ -13,6 +14,35 @@
 </head>
 
 <body>
+    <!--모바일 메뉴 클릭시 메뉴팝업-->
+    <div class="menu_popup_wrap">
+       <a href="#" class="menu_popup_cbtn">
+       <img src="images/btn_close_white.png" alt="닫기버튼" class="menu_popup_cbtn_img">
+       </a>
+        <button class="menu_popup_btn shopBtn">SHOP</button>
+        <ul class="menu_popup_navi_wrap">
+            <li class="active"><a href="#">HOME</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">연구개발</a></li>
+            <li><a href="#">사업분야</a></li>
+            <li><a href="#">협력문의</a></li>
+            <li><a href="#">소개자료</a></li>
+            <li><a href="#">공지사항</a></li>
+        </ul>
+        <div class="menu_popup_txt">
+            <ol>
+                <li>대표전화 : <b>031-523-3710</b></li>
+                <li>상담실 : <b>070-4010-9057</b></li>
+                <li>E-mail : contact@designonehealth.com</li>
+                <li>Copyright (c) Design One Health Inc.</li>
+            </ol>
+        </div>
+        <ul class="menu_popup_sns_wrap">
+            <li><a href="#"><img src="images/sns_facebook.png" alt="페이스북"></a></li>
+            <li><a href="#"><img src="images/sns_instar.png" alt="인스타그램"></a></li>
+            <li><a href="#"><img src="images/sns_blog.png" alt="블로그"></a></li>
+        </ul>
+    </div>
 
     <!--헤더영역------------------------------------------------>
     <header>
@@ -29,7 +59,7 @@
                         <li><a href="#">공지사항</a></li>
                     </ul>
                 </nav>
-                <button class="topbtn" target="_blank" onclick="location.href=">SHOP</button>
+                <button class="topbtn shopBtn" target="_blank" onclick="location.href=">SHOP</button>
             </div>
             <!--모바일 헤더-->
             <div class="header_m">
@@ -91,18 +121,24 @@
             <ul class="main_list_wrap">
                 <li>
                     <img src="images/main_list1.png" alt="헬스케어 컨설팅 아이콘">
-                    <b>헬스케어 컨설팅</b>
-                    <p>생체시료 분석기술 개발 및 고도화를 통한 비대면 헬스케어 컨설팅</p>
+                    <div class="boxtxt">
+                        <b>헬스케어 컨설팅</b>
+                        <p>생체시료 분석기술 개발 및 고도화를 통한 비대면 헬스케어 컨설팅</p>
+                    </div>
                 </li>
                 <li>
                     <img src="images/main_list2.png" alt="헬스케어 관련제품 개발 아이콘">
-                    <b>헬스케어 관련제품 개발</b>
-                    <p>첨단기술 기반의 헬스케어 소재,포뮬레이션 및 완제품 개발</p>
+                    <div class="boxtxt">
+                        <b>헬스케어 관련제품 개발</b>
+                        <p>첨단기술 기반의 헬스케어 소재,포뮬레이션 및 완제품 개발</p>
+                    </div>
                 </li>
                 <li>
                     <img src="images/main_list3.png" alt="감염병 예방기술 연구 아이콘">
-                    <b>감염병 예방기술 연구</b>
-                    <p>신종 감염원 출현의 조기 발견을 통한 백신 및 치료제 연구</p>
+                    <div class="boxtxt">
+                        <b>감염병 예방기술 연구</b>
+                        <p>신종 감염원 출현의 조기 발견을 통한 백신 및 치료제 연구</p>
+                    </div>
                 </li>
             </ul>
 
@@ -110,7 +146,7 @@
         <!--디자인원헬스 내용-------------------------------->
         <section class="main_info_wrap">
             <div class="info_img"></div>
-            <div class="inbox">
+            <div class="inbox main_info_box">
                 <!--ceo박스-->
                 <div class="ceobox">
                     <div class="ceoimg"></div>
@@ -136,9 +172,9 @@
                     디자인원헬스의 <b>핵심키워드</b>
                     <small>반려동물을 바라보며 인류의 건강을 디자인 합니다.</small>
                 </h1>
-                <div class="keyword_box">
-
-                </div>
+                <img src="images/keyword.png" alt="keyword PC" class="keyword_PC">
+                <img src="images/keyword_M.png" alt="keyword M" class="keyword_M">
+               
             </div>
 
         </section>
@@ -171,11 +207,12 @@
 
             <!--뮤비보기 팝업창-->
             <div id="modal">
-
+                
                 <div id="vidSizer">
+                   <span>&times;</span>
                     <div id="vidHolder">
                         <iframe name="mainVid" id="mainVid" src="" frameborder="0" allow="autoplay=1; encrypted-media" allowfullscreen></iframe>
-                        <span>&times;</span>
+
                     </div>
                 </div>
             </div>
